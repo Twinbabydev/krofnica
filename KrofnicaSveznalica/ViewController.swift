@@ -38,7 +38,7 @@ class ViewController: UIViewController {
 
     @IBAction func askMeButton(_ sender: Any) {
         
-        answerLabel.alpha = 1
+        answerLabel.alpha = 0.95
         var index = Int.random(in: 0...4)
         krofnicaImage.image = krofnicaArray[index]
         answerLabel.text = answerArray[index].rawValue
