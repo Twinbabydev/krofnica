@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KrofnicaSveznalica" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="wYw-mq-AAc">
+                                <rect key="frame" x="87" y="484" width="240" height="72"/>
+                                <color key="backgroundColor" red="0.22753617170000001" green="0.55299317839999995" blue="0.56869894269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="DtV-SA-bsT"/>
+                                    <constraint firstAttribute="height" constant="72" id="Dzi-gv-HCd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="18"/>
+                                <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTy-WE-UYa">
+                                <rect key="frame" x="117" y="664" width="180" height="90"/>
+                                <color key="backgroundColor" red="0.22753617170000001" green="0.55299317839999995" blue="0.56869894269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="7RQ-KT-Oeg"/>
+                                    <constraint firstAttribute="width" constant="180" id="axX-Kw-X3s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="tintColor" red="0.22753617170000001" green="0.55299317839999995" blue="0.56869894269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="pitaj me">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="askMeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJL-8a-OSP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Krofnica sveznalica" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5j-ba-2YA">
+                                <rect key="frame" x="111" y="121" width="192" height="80"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="0gW-6D-36p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                <color key="textColor" red="0.22753617170000001" green="0.55299317839999995" blue="0.56869894269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qj0-Zl-RLK">
+                                <rect key="frame" x="87" y="236" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ahy-Xf-KGv"/>
+                                    <constraint firstAttribute="height" constant="240" id="gg9-PM-1Fd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="nMv-oM-1Ix"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="r5j-ba-2YA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Rb-HJ-bBn"/>
+                            <constraint firstItem="qj0-Zl-RLK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7jm-KR-f5v"/>
+                            <constraint firstItem="wYw-mq-AAc" firstAttribute="top" secondItem="qj0-Zl-RLK" secondAttribute="bottom" constant="8" id="9eW-Am-V0G"/>
+                            <constraint firstItem="BTy-WE-UYa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hp7-gb-lAr"/>
+                            <constraint firstItem="BTy-WE-UYa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="261" id="KEK-Vj-Odq"/>
+                            <constraint firstItem="qj0-Zl-RLK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S4Z-sL-v3z"/>
+                            <constraint firstItem="qj0-Zl-RLK" firstAttribute="top" secondItem="r5j-ba-2YA" secondAttribute="bottom" constant="35" id="kQg-E1-Ilg"/>
+                            <constraint firstItem="wYw-mq-AAc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xfy-3Y-I4j"/>
+                            <constraint firstItem="r5j-ba-2YA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="yWT-4o-Z6g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="wYw-mq-AAc" id="oIx-46-4NK"/>
+                        <outlet property="askMeOutlet" destination="BTy-WE-UYa" id="bgV-cH-sj6"/>
+                        <outlet property="krofnicaImage" destination="qj0-Zl-RLK" id="VUF-xX-U95"/>
+                        <outlet property="krofnicaLabel" destination="r5j-ba-2YA" id="7Rp-Un-Def"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>
